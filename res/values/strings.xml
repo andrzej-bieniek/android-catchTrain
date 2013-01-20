@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">catchTrain</string>
+    <string name="destination">Destination</string>
+    <string name="bt_destination_change">Change</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
