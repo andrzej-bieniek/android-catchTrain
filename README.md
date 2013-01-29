@@ -22,8 +22,16 @@ todo list
 Develop
 =======
 Example steps to setup project in Eclipse and run it on emulator:
+
 1. Download ADT bundle from http://developer.android.com/sdk/index.html
 2. Extract and run eclipse from the bundle
 3. Clone repository: git clone git://github.com/andyhelp/catchTrain.git
 4. Import repository to Eclipse, File->Import
 5. Create emulator and run project as an "Android Application"
+
+
+Links
+=====
+* http://code.google.com/p/osmand/
+* https://github.com/nguillaumin/osmtracker-android
+* https://github.com/poggs/tsdbexplorer
