@@ -43,7 +43,8 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9:53 (3 minutes late)" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="--" />
     </LinearLayout>
     
     <LinearLayout
@@ -60,7 +61,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Run faster!"
+            android:text="--"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
@@ -73,7 +74,7 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GPS: 5 [m/h], dst:0.5[miles] lat:44 lon:33" />
+            android:text="GPS: waiting for GPS lock" />
             
     </LinearLayout>
     
@@ -87,7 +88,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff0000"
-            android:text="Public status: running" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Public status: --" />
 
     </LinearLayout>
 
