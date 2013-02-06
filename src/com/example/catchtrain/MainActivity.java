@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
 					tEstView.setText(dateEstString );
 
 					/* Set advise */
-					Date dateTarget = new Date( year, month, day, 10, 50);
+					Date dateTarget = new Date( year, month, day, 9, 50);
 
 					long timeDiff = dateEst.getTime() - dateTarget.getTime();
 					String adviseStr;
