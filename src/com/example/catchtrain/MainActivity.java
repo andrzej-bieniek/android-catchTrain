@@ -14,6 +14,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.format.Time;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -105,6 +107,33 @@ public class MainActivity extends Activity {
 
 	   locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 //	   locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
+
+		//Setup button
+		Button chLocation = (Button) findViewById(R.id.button1);
+
+		chLocation.setOnClickListener(new View.OnClickListener() {
+			final int data = 0;
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent openMenu = new Intent("com.example.catchtrain.locationMenu");
+				startActivityForResult(openMenu, data);
+			}
+		});
+
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if( resultCode == RESULT_OK ) {
+			TextView tDestView = (TextView) findViewById(R.id.textView2);
+			Bundle extras = data.getExtras();
+			String location = extras.getString("location");
+
+			tDestView.setText(location);
+		}
 	}
 
 	@Override
