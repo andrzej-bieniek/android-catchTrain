@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
 				}
 
 				/* Set public status */
-				if( speed > 5 ) {
+				if( speed > 3 ) {
 					tStatusView.setText("Your status: running");
 				} else if( speed > 0) {
 					tStatusView.setText("Your status: walking");
